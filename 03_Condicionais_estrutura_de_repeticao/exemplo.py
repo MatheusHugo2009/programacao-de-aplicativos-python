@@ -1,14 +1,50 @@
-#AULA: OPERADORES LÓGICOS E ESTRUTURAS CONDICIONAIS
-# 1. OPERADORES LÓGICOS
-from operator import truediv
+#1. Estrutura Condicionais
 
-# Os operados lógicos permitem combinar condições.
+nota = 6
 
-# and
-# Todas as condições precisam ser verdadeiras
+if nota >= 7:
+    print("Aprovado")
+elif nota  >=5:
+    print("Recuperação")
+else:
+    print("Reprovado")
+
+    # 2. Condicionais e Operadores Lógicos
+    #and -> Todas as condiçoes devem ser verdadeiras
+    #or -> Pelo menos uma condição deve ser verdadeira
+    #not -> inverte o resultado
 
 idade = 20
-possui_carteira = True
+ingresso = True
 
-resultado = idade >= 18 and possui_carteira
-print(resultado)
+if idade >= 18 and ingresso:
+    print("Entrada Permitida")
+else:
+    print("Entrada não permitida")
+
+    #3. Estrutura de Repetição while
+contador = 1
+
+
+while contador <=5:
+    print(contador)
+    contador += 1
+
+
+#4. Estrutura de Repetição for
+for numero in range(1,6):
+    print(numero)
+
+# 5. Percorrendo uma Lista
+nomes = ["Ana", "Carlos", "João", "Maria"]
+
+for nome in nomes:
+    print(nome)
+
+# 6. Break, Continue, Pass
+for numero in range(1,11):
+    if numero == 6:
+        #break
+        #continue
+        #pass
+     print(numero)
